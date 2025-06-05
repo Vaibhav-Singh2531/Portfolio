@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Vaibhav Singh</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="project-page">
+    <nav class="navbar">
+        <div class="nav-logo">VS</div>
+        <button class="hamburger" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Project.html" class="active">Project</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container project-container">
+        <aside class="profile-card project-profile-card">
+            <img src="my-photo.png" alt="Profile Photo" class="avatar">
+            <h2>Alex Smith</h2>
+            <p class="title">Web Designer</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <a href="#" class="download-btn">Download CV</a>
+            <footer>&copy; 2025 All rights reserved.</footer>
+        </aside>
+        <main class="projects-main-content">
+            <div class="projects-title">Projects</div>
+            <div class="projects-list">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-card-image-wrap">
+                            <img src="project1.png" alt="AIMug Project Screenshot" class="project-card-image">
+                        </div>
+                        <div class="project-card-title">Realtime Chat App</div>
+                        <!-- <div class="project-card-meta">Product Design | Application</div> -->
+                        <div class="project-card-desc">
+                            A real-time chat application built with <span style="color:#00cfff;font-weight:600;">React.js</span> and <span style="color:#00cfff;font-weight:600;">Socket.io</span> for seamless messaging.
+                            It supports instant communication with a clean, responsive UI and live user updates.
+                            <!-- Unlock <span style="color:#ff9900;font-weight:600;">10X</span> Faster &amp; More Responsive <span style="color:#00cfff;font-weight:600;">AI-Powered Copywriting Tool</span>. Start writing free or book a demo. Rated 4.8+ by 1,000+ users. -->
+                        </div>
+                    </div>
+                    <div class="project-card-footer">
+                        <a href="https://github.com/Vaibhav-Singh2531/Fullstack-Chat-App" class="project-card-link" target="_blank">GitHub<i
+                                class="fas fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- Project Card 2  -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-card-image-wrap">
+                            <img src="project2.png" alt="Jampio" class="project-card-image">
+                        </div>
+                        <div class="project-card-title">Jampio</div>
+                        <!-- <div class="project-card-meta">Product Design | Application</div> -->
+                        <div class="project-card-desc">
+                            Unlock <span style="color:#ff9900;font-weight:600;">10X</span> Faster &amp; More Responsive
+                            <span style="color:#00cfff;font-weight:600;">AI-Powered Copywriting Tool</span>. Start
+                            writing free or book a demo. Rated 4.8+ by 1,000+ users.
+                        </div>
+                    </div>
+                    <div class="project-card-footer">
+                        <a href="https://github.com/Vaibhav-Singh2531/Jumpio" class="project-card-link" target="_blank">GitHub<i
+                                class="fas fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-card-image-wrap">
+                            <img src="project3.png" alt="Jampio" class="project-card-image">
+                        </div>
+                        <div class="project-card-title">Bitezy</div>
+                        <!-- <div class="project-card-meta">Product Design | Application</div> -->
+                        <div class="project-card-desc">
+                           A user-friendly food ordering application that allows customers to browse menus, place orders, and track deliveries in real-time
+                        </div>
+                    </div>
+                    <div class="project-card-footer">
+                        <a href="https://github.com/Vaibhav-Singh2531/Bitezy" class="project-card-link" target="_blank">GitHub<i
+                                class="fas fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

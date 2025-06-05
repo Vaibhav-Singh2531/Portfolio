@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Smith - Frontend Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">VS</div>
+    <button class="hamburger" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Project.html">Project</a></li>
+      <li><a href="Contact.html" >Contact</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <aside class="profile-card">
+      <img src="my-photo.png" alt="Profile Photo" class="avatar">
+      <h2>Vaibhav Singh</h2>
+      <p class="title">Web Designer</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <a href="#" class="download-btn">Download CV</a>
+      <footer>&copy; 2025 All rights reserved.</footer>
+    </aside>
+    <main class="main-content">
+      <h1>Vaibhav Singh</h1>
+      <p class="subtitle">Frontend-developer</p>
+    </main>
+  </div>
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

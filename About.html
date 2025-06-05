@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Alex Smith</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">Alex Smith</div>
+        <button class="hamburger" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html" class="active">About</a></li>
+            <li><a href="Project.html">Project</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside class="profile-card about-profile-card">
+            <img src="my-photo.png" alt="Profile Photo" class="avatar">
+            <h2>Alex Smith</h2>
+            <p class="title">Web Designer</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <a href="#" class="download-btn">Download CV</a>
+            <footer>&copy; 2025 All rights reserved.</footer>
+        </aside>
+        <main class="about-main-content">
+            <section class="about-section">
+                <h1 class="about-title">About <span class="highlight">Me</span></h1>
+                <div class="about-flex">
+                    <div class="about-desc">
+                        <p>
+                            Hi, I'm Vaibhav Singh, a passionate and curious learner currently pursuing a B.Tech in
+                            Computer Science and Engineering with a specialization in Artificial Intelligence and
+                            Machine Learning at UPES Dehradun.
+
+                            I enjoy exploring the world of technology, especially the intersection of software
+                            development and intelligent systems. Over time, I’ve developed a strong foundation in
+                            languages like C, Python, and SQL, and I'm on a journey to become a full-stack developer.
+                        </p>
+                    </div>
+                    <ul class="about-info">
+                        <li><span>Age</span> 20</li>
+                        <li><span>Residence</span> India</li>
+                        <li><span>Address</span> Muzaffarnagar</li>
+                        <li><span>e-mail</span>vaibhavsingh2531@gmail.com</li>
+                        <li><span>Phone</span> +91 9410481816</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="whatido-section">
+                <h2 class="whatido-title">What <span class="highlight">I Do</span></h2>
+                <div class="whatido-flex">
+                    <div class="whatido-card">
+                        <i class="fas fa-laptop fa-2x"></i>
+                        <h3>Web Development</h3>
+                        <p>Building responsive websites and learning full-stack technologies.</p>
+                    </div>
+                    <div class="whatido-card">
+                        <i class="fas fa-microchip fa-2x"></i>
+                        <h3>AI & ML</h3>
+                        <p>Exploring machine learning models and smart solutions.</p>
+                    </div>
+                    <div class="whatido-card">
+                        <i class="fas fa-puzzle-piece fa-2x"></i>
+                        <h3>Problem Solving</h3>
+                        <p>Solving logical and coding challenges with C, Python, and SQL.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
