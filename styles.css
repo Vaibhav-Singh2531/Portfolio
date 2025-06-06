@@ -606,7 +606,7 @@ body {
   }
   .contact-info-box {
     flex: 1 1 80px;
-    padding: 18px 0;
+    padding: 10px 0;
     font-size: 1rem;
   }
   
@@ -621,7 +621,8 @@ body {
   .contact-info {
     flex-direction: column;
     gap: 8px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
   }
   .contact-info-box {
     font-size: 0.95rem;
